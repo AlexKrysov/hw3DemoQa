@@ -22,7 +22,7 @@ public class RegistrationFormTests {
         String userName = "Ivan";
         String lastName = "Ivanov";
         String Email = "Ivan@ivanov.com";
-        String Mobile = "1231231231";
+        String Mobile = "1231231234";
         String Subjects = "biology";
         String CurrentAddress = "street 7";
 
