@@ -28,6 +28,10 @@ public class RegistrationFormTests {
 
 
         open("/automation-practice-form");
+
+        executeJavaScript("$('footer').remove()");
+        executeJavaScript("$('#fixedban').remove()");
+
         $("#firstName").setValue(userName);
         $("#lastName").setValue(lastName);
         $("#userEmail").setValue(Email);
@@ -41,8 +45,6 @@ public class RegistrationFormTests {
         $("#hobbiesWrapper").$(new ByText("Reading")).click();
         $("#uploadPicture").uploadFromClasspath("img/1.png");
         $("#currentAddress").setValue(CurrentAddress);
-        executeJavaScript("$('footer').remove()");
-        executeJavaScript("$('#fixedban').remove()");
         $("#state").click();
         $("#stateCity-wrapper").$(new ByText("Uttar Pradesh")).click();
         $("#city").click();
