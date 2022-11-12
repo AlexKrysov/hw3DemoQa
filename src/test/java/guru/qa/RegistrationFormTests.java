@@ -41,6 +41,8 @@ public class RegistrationFormTests {
         $("#hobbiesWrapper").$(new ByText("Reading")).click();
         $("#uploadPicture").uploadFromClasspath("img/1.png");
         $("#currentAddress").setValue(CurrentAddress);
+        executeJavaScript("$('footer').remove()");
+        executeJavaScript("$('#fixedban').remove()");
         $("#state").click();
         $("#stateCity-wrapper").$(new ByText("Uttar Pradesh")).click();
         $("#city").click();
