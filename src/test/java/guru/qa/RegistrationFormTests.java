@@ -31,7 +31,7 @@ public class RegistrationFormTests {
         $("#firstName").setValue(userName);
         $("#lastName").setValue(lastName);
         $("#userEmail").setValue(Email);
-        $("#genterWrapper").$(new ByText("Other")).click();
+        $("#genterWrapper").$(new ByText("Male")).click();
         $("#userNumber").setValue(Mobile);
         $("#dateOfBirthInput").click();
         $(".react-datepicker__month-select").selectOption("July");
@@ -48,7 +48,7 @@ public class RegistrationFormTests {
         $("#submit").click();
 
         $(".modal-title").shouldHave(text("Thanks for submitting the form"));
-        $(".table-responsive").shouldHave(text("Ivan Ivanov"), text(Email), text("28 July,2005"), text("Other"), text(Subjects), text(CurrentAddress));
+        $(".table-responsive").shouldHave(text("Ivan Ivanov"), text(Email), text("28 July,2005"), text("Male"), text(Subjects), text(CurrentAddress));
 
 
 
