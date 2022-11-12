@@ -23,7 +23,7 @@ public class RegistrationFormTests {
         String lastName = "Ivanov";
         String Email = "Ivan@ivanov.com";
         String Mobile = "1231231231";
-        String Subjects = "Math";
+        String Subjects = "biology";
         String CurrentAddress = "street 7";
 
 
@@ -42,9 +42,9 @@ public class RegistrationFormTests {
         $("#uploadPicture").uploadFromClasspath("img/1.png");
         $("#currentAddress").setValue(CurrentAddress);
         $("#state").click();
-        $("#stateCity-wrapper").$(new ByText("NCR")).click();
+        $("#stateCity-wrapper").$(new ByText("Uttar Pradesh")).click();
         $("#city").click();
-        $("#stateCity-wrapper").$(new ByText("Delhi")).click();
+        $("#stateCity-wrapper").$(new ByText("Agra")).click();
         $("#submit").click();
 
         $(".modal-title").shouldHave(text("Thanks for submitting the form"));
