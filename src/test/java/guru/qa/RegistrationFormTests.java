@@ -52,7 +52,7 @@ public class RegistrationFormTests {
         $("#submit").click();
 
         $(".modal-title").shouldHave(text("Thanks for submitting the form"));
-        $(".table-responsive").shouldHave(text("Ivan Ivanov"), text(Email), text("09 August,199"), text("Male"), text(Subjects), text(CurrentAddress));
+        $(".table-responsive").shouldHave(text("Ivan Ivanov"), text(Email), text("09 August,1995"), text("Male"), text(Subjects), text(CurrentAddress));
 
 
 
