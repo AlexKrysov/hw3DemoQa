@@ -38,9 +38,9 @@ public class RegistrationFormTests {
         $("#genterWrapper").$(new ByText("Male")).click();
         $("#userNumber").setValue(Mobile);
         $("#dateOfBirthInput").click();
-        $(".react-datepicker__month-select").selectOption("July");
-        $(".react-datepicker__year-select").selectOption("2005");
-        $(".react-datepicker__day--028:not(.react-datepicker__day--outside-month)").click();
+        $(".react-datepicker__month-select").selectOption("August");
+        $(".react-datepicker__year-select").selectOption("1995");
+        $(".react-datepicker__day--009:not(.react-datepicker__day--outside-month)").click();
         $("#subjectsInput").setValue(Subjects).pressEnter();
         $("#hobbiesWrapper").$(new ByText("Reading")).click();
         $("#uploadPicture").uploadFromClasspath("img/1.png");
@@ -52,7 +52,7 @@ public class RegistrationFormTests {
         $("#submit").click();
 
         $(".modal-title").shouldHave(text("Thanks for submitting the form"));
-        $(".table-responsive").shouldHave(text("Ivan Ivanov"), text(Email), text("28 July,2005"), text("Male"), text(Subjects), text(CurrentAddress));
+        $(".table-responsive").shouldHave(text("Ivan Ivanov"), text(Email), text("09 August,199"), text("Male"), text(Subjects), text(CurrentAddress));
 
 
 
