@@ -29,6 +29,7 @@ public class RegistrationFormTests {
 
         open("/automation-practice-form");
 
+
         executeJavaScript("$('footer').remove()");
         executeJavaScript("$('#fixedban').remove()");
 
