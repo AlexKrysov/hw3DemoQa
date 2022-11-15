@@ -17,6 +17,7 @@ public class SelenideSearch {
         $$(".repo-list li").first().$("a").click();
         //check: в заголовке встречается selenide/selenide
         $("a").should(text("selenide"));
+        sleep (5000);
 
 
 
